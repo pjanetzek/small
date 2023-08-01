@@ -120,7 +120,7 @@ mempool_objsize_max(uint32_t slab_size)
 		 ~(sizeof(intptr_t) - 1);
 }
 
-  typedef rb_tree(struct mslab,struct _{};) mslab_tree_t;
+  typedef rb_tree(struct mslab) mslab_tree_t;
 
 struct small_mempool;
 
